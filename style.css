@@ -1,0 +1,131 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(to bottom, blue, white);
+
+}
+
+.todo-app {
+  width: 100%;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 540px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  background: transparent;
+}
+
+button {
+  outline: none;
+  padding: 16px 30px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 40px;
+  border: none;
+  background-color: blue;
+  cursor: pointer;
+}
+
+ul li {
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+
+ul li::before {
+  content: none;
+  background-image: url('https://icons.veryicon.com/png/o/miscellaneous/wens/uncheck.png');
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #1c1a1a;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: url("https://visualpharm.com/assets/95/Checked-595b40b75ba036ed117d73f0.svg");
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
+}
+
+h2 {
+  display: flex;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.icon {
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  margin-left: 90px;
+  margin-top: -30px;
+}
